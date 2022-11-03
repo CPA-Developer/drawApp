@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tools"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#706A6A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <Button
+                android:id="@+id/red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DC0B0B"
+                android:onClick="buttonOnclickListener"
+                android:textSize="14sp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/yellow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DFCE39"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/green"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3CD342"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/skyblue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#41B2E4"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/blue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0D26B1"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/pink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DF3E75"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0E0404"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ECECEC"
+                android:onClick="buttonOnclickListener"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="1480dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+
+            <ImageButton
+                android:id="@+id/brush"
+                android:layout_width="84dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="#F3EEEE"
+                android:onClick="imageButtonListener"
+                android:src="@drawable/ic_brush" />
+
+            <ImageButton
+                android:id="@+id/marker"
+                android:layout_width="84dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#F6F1F1"
+                android:onClick="imageButtonListener"
+                app:srcCompat="@drawable/mark1" />
+
+            <ImageButton
+                android:id="@+id/pencil"
+                android:layout_width="84dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#FBFAFA"
+                android:onClick="imageButtonListener"
+                app:srcCompat="@drawable/mark3" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="#F3F2F2"
+                android:onClick="clearScreenButton"
+                android:text="Clear"
+                android:textColor="#130E0E" />
+        </TableRow>
+
+    </TableLayout>
+
+    <comp208.drawapp.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E9EDBC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tools"></comp208.drawapp.DrawingView>
+</androidx.constraintlayout.widget.ConstraintLayout>
